@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
     console.error(`FFmpeg error output: ${stderr}`);
 
     const form = new FormData();
-    form.append('audio_file', fs.createReadStream(outputAudioFile), { filename: 'output_audio.mp3' });
+    form.append('audio_file', fs.createReadStream(outputAudioFile), { filename: 'audio.mp3' });
 
     const requestOptions = {
       hostname: 'localhost',
@@ -60,7 +60,7 @@ app.get('/', async (req, res) => {
     console.log(response);
 
     const result = await client.index({
-      index: 'myindex',
+      index: 'image',
       body: {
         audio_data: response
       },

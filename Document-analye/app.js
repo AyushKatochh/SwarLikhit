@@ -103,7 +103,6 @@ app.get('/test', async (req, res) => {
     try {
       const results = await client.search({
         index: 'image',
-        type: 'document',
         body: {
           query: {
             match: {

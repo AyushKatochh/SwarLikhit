@@ -2,17 +2,17 @@ version : '3.3'
 services  :
 #Container - 1 - website{node}
 
-  videocalling:
-    container_name: videocalling
-    build: C:\Users\katoc\OneDrive\Desktop\github\SwarLikhit\vc-Front-end
-    ports: 
-    - "3000:3000"
+  # videocalling:
+  #   container_name: videocalling
+  #   build: C:\Users\katoc\OneDrive\Desktop\github\SwarLikhit\vc-Front-end
+  #   ports: 
+  #   - "3000:3000"
     
-  videocallingbackend:  
-    container_name: videocalling-end
-    build: C:\Users\katoc\OneDrive\Desktop\github\SwarLikhit\SwarLikhit-backend
-    ports: 
-    - "7000:7000"    
+  # videocallingbackend:  
+  #   container_name: videocalling-end
+  #   build: C:\Users\katoc\OneDrive\Desktop\github\SwarLikhit\SwarLikhit-backend
+  #   ports: 
+  #   - "7000:7000"    
   filemanager_website:
     container_name: docman_website
     build: C:\Users\katoc\OneDrive\Desktop\github\SwarLikhit\Document-analye
