@@ -1,0 +1,10 @@
+FROM node:14
+
+WORKDIR /my-app
+COPY . .
+
+RUN npm i path express moment socket.io
+
+
+EXPOSE 3000
+CMD [ "npm", "start" ]
